@@ -1,7 +1,7 @@
 Minimal-Blog 
 ============
 
-A responsive blog theme for Jekyll.
+A responsive blog theme for Jekyll. You can see it in use [here](http://nickw.it).
 
 ## Features & Preferences
 
