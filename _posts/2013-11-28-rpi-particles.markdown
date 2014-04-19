@@ -41,7 +41,7 @@ I'm not comparing like for like demos, but my feeling here is that these sorts o
 
 I suspect I'm missing a trick in taking advantage of some transform-related trickery, perhaps not. Material on the raw OpenVG APIs is frustratingly scarce.
 
-So here's the result currently. Nothing mindblowing, but good fun and the fairly pleasing screensaver feel has given me ideas for further tinkering. (Code and usage instructions [here](https://gist.github.com/nilliams/7705819).
+So here's the result currently. Nothing mindblowing, but good fun and the fairly pleasing screensaver feel has given me ideas for further tinkering. (Code and usage instructions [here](https://gist.github.com/nilliams/7705819)).
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/w6mHtbFF9hs" frameborder="0" allowfullscreen></iframe>
 

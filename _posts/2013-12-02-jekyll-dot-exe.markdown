@@ -194,8 +194,4 @@ $ ocra jekyll-1.2.0/bin/jekyll jekyll-1.2.0/lib/jekyll/mime.types jekyll-1.2.0/l
 
 I've been really impressed with [OCRA](http://ocra.rubyforge.org/) and I'm still pretty surprised this even works. Be sure to [check it out](http://ocra.rubyforge.org) and consider it for your own projects. Maybe we can make some more Ruby tools less painful on Windows.
 
-If you have any questions or comments, please hit me up on [twitter](http://twitter.com/nickwuh).
-
-<!--
-Nonono, not this (which brings the ruby kitchen sink with it): http://www.madhur.co.in/blog/2013/07/20/buildportablejekyll.html
--->
+If you have any questions or comments, hit me up on [twitter](http://twitter.com/nickwuh).
