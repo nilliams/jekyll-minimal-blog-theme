@@ -226,9 +226,6 @@ ul.social a:hover {
     position: static;
     width: auto;
   }
-  header {
-    padding-right: 320px;
-  }
   header small {
     display: inline;
   }
