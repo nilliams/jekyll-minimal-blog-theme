@@ -18,6 +18,11 @@
       :not(pre) > code[class*="language-"], pre[class*="language-"] { background: #f8f8f8; margin-bottom: 20px }
       code[class*="language-"], pre[class*="language-"] { line-height: 1.3em }
     </style>
+
+    <!-- IE6/7 - `overflow: auto` works, but `scroll` saves worrying about inconsistent bottom-padding -->
+    <!--[if lt IE 8]>
+    <style> pre { position: relative; width: 650px; overflow-x: scroll } </style>
+    <![endif]-->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
   </head>
 
@@ -47,6 +52,9 @@
         {{ content }}
       </section>
     </div>
+
+    <!-- Don't load any JS for oldIE -->
+    <!--[if gt IE 8]><!-->
     <script src="/js/scale.fix.js"></script>
     <script src="/js/prism.custom.js"></script>
     <script src="/js/zepto.min.js"></script>
@@ -54,5 +62,6 @@
     <script>
       $('.post').fitVids();
     </script>
+    <!--<![endif]-->
   </body>
 </html>
