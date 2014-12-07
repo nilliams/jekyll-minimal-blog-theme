@@ -40,6 +40,9 @@ h1,
 h2 {
   font-size: 40px;
 }
+h1.no-subheading {
+  margin-bottom: 40px;
+}
 p,
 ul,
 ol,
@@ -157,7 +160,6 @@ ul code {
   padding: 3px 4px;
   border-radius: 4px;
   /* Drops the font-size by 1px in code blocks, TODO: Use LESS maths */
-
   font-size: 15px;
 }
 ul.social,
@@ -167,7 +169,6 @@ ul.index-menu {
 }
 h3 {
   /* Generous gap before start of post content */
-
 }
 .post h3 {
   padding-top: 35px;
@@ -301,10 +302,9 @@ ul.social a:hover {
   margin-bottom: 30px;
 }
 .index-menu small {
-  font-size: 16px;
+  font-size: 14px;
   padding: 8px 0;
   color: #999;
-  font-family: Georgia;
 }
 .index-menu .post-title {
   display: block;
@@ -312,7 +312,8 @@ ul.social a:hover {
 }
 .index-menu .post-subtitle {
   display: inline-block;
-  font-size: 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
   line-height: 1.2em;
   color: #777;
 }
@@ -320,10 +321,15 @@ ul.social a:hover {
   display: block;
 }
 .tag-label {
-  font-size: 14px;
-  background: #ddd;
-  border-radius: 4px;
+  font-size: 10px;
+  border-radius: 3px;
   padding: 2px 6px;
+  border: 2px solid #dddddd;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  top: -1px;
+  color: #666666;
 }
 .tag-label:first-child {
   margin-left: 5px;

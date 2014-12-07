@@ -34,6 +34,10 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3 { line-height: 1.1; }
 h1, h2 { font-size: 40px; }
 
+h1.no-subheading {
+    margin-bottom: 40px;
+}
+
 p, ul, ol, table, pre, dl,
 .fluid-width-video-wrapper { margin: 0 0 20px; }
 
@@ -272,10 +276,9 @@ ul.social {
   li { margin-bottom: 30px; }
 
   small {
-    font-size: 16px;
+    font-size: 14px;
     padding: 8px 0;
     color: #999;
-    font-family: Georgia;
   }
   .post-title {
     display: block;
@@ -283,7 +286,8 @@ ul.social {
   }
   .post-subtitle {
     display: inline-block;
-    font-size: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
     line-height: 1.2em;
     color: #777;
   }
@@ -293,10 +297,15 @@ ul.social {
 }
 
 .tag-label {
-  font-size: 14px;
-  background: #ddd;
-  border-radius: 4px;
+  font-size: 10px;
+  border-radius: 3px;
   padding: 2px 6px;
+  border: 2px solid #dddddd;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  top: -1px;
+  color: #666666;
 }
 
 .tag-label:first-child { margin-left: 5px }
