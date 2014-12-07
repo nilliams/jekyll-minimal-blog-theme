@@ -40,8 +40,10 @@ h1,
 h2 {
   font-size: 40px;
 }
-h1.no-subheading {
-  margin-bottom: 40px;
+@media (min-width: 1060px) {
+  h1.no-subheading {
+    margin-bottom: 40px;
+  }
 }
 p,
 ul,
@@ -79,7 +81,7 @@ code,
 pre {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color: #333;
-  font-size: 16px;
+  font-size: 14px;
 }
 pre {
   padding: 8px 15px;
@@ -159,8 +161,8 @@ ul code {
   border: 1px solid #e1e1e1;
   padding: 3px 4px;
   border-radius: 4px;
-  /* Drops the font-size by 1px in code blocks, TODO: Use LESS maths */
-  font-size: 15px;
+  /* Drops the font-size by 2px in code blocks, TODO: Use LESS maths */
+  font-size: 14px;
 }
 ul.social,
 ul.index-menu {
@@ -215,6 +217,20 @@ ul.social a:hover {
   color: #39c;
   transition: color 0.2s ease-in-out;
 }
+@media (min-width: 1061px) {
+  header .nav a {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Helvetica Neue", sans-serif;
+    border-radius: 4px;
+    padding: 7px 12px;
+    border: 2px solid #cccccc;
+    position: relative;
+    top: 2px;
+    left: -1px;
+  }
+}
 @media print, screen and (max-width: 1060px) {
   .wrapper {
     width: auto;
@@ -239,8 +255,7 @@ ul.social a:hover {
     display: none;
   }
   section {
-    border: 1px solid #e5e5e5;
-    border-width: 1px 0;
+    border-top: 1px solid #e5e5e5;
     padding: 20px 0;
     margin: 0 0 20px;
   }

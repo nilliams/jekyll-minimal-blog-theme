@@ -6,7 +6,7 @@
 @link-hover-color: #069;
 
 @body-font-size: 18px;
-@code-font-size: 16px;
+@code-font-size: 14px;
 @small-font-size: 14px;
 
 /* Micro clearfix */
@@ -34,8 +34,10 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3 { line-height: 1.1; }
 h1, h2 { font-size: 40px; }
 
-h1.no-subheading {
-    margin-bottom: 40px;
+@media (min-width: 1060px) {
+    h1.no-subheading {
+        margin-bottom: 40px;
+    }
 }
 
 p, ul, ol, table, pre, dl,
@@ -147,8 +149,8 @@ p code, ul code {
   padding: 3px 4px;
   border-radius: 4px;
 
-  /* Drops the font-size by 1px in code blocks, TODO: Use LESS maths */
-  font-size: 15px;
+  /* Drops the font-size by 2px in code blocks, TODO: Use LESS maths */
+  font-size: 14px;
 }
 
 ul.social,
@@ -196,6 +198,22 @@ ul.social {
   }
 }
 
+@media (min-width: 1061px) {
+    header .nav a {
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: "Helvetica Neue", sans-serif;
+        border-radius: 4px;
+        padding: 7px 12px;
+        border: 2px solid #cccccc;
+
+        position: relative;
+        top: 2px;
+        left: -1px;
+    }
+}
+
 @media print, screen and (max-width: 1060px) {
   .wrapper {
     width: auto;
@@ -221,8 +239,7 @@ ul.social {
   }
 
   section {
-    border: 1px solid #e5e5e5;
-    border-width: 1px 0;
+    border-top: 1px solid #e5e5e5;
     padding: 20px 0;
     margin: 0 0 20px;
   }
