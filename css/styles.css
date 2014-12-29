@@ -218,7 +218,7 @@ ul.social a:hover {
   color: #39c;
   transition: color 0.2s ease-in-out;
 }
-@media (min-width: 1061px) {
+@media (min-width: 967px) {
   header .nav a {
     font-size: 13px;
     text-transform: uppercase;
