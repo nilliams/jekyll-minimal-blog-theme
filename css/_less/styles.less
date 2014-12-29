@@ -5,7 +5,7 @@
 @link-color: #39c;
 @link-hover-color: #069;
 
-@body-font-size: 18px;
+@body-font-size: 16px;
 @code-font-size: 14px;
 @small-font-size: 14px;
 
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3 { line-height: 1.1; }
 h1, h2 { font-size: 40px; }
 
-@media (min-width: 1060px) {
+@media (min-width: 967px) {
     h1.no-subheading {
         margin-bottom: 40px;
     }
@@ -64,6 +64,11 @@ blockquote {
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
+}
+
+blockquote {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 code, pre {
@@ -134,7 +139,7 @@ header {
     a { font-weight: bold; color: #333; }
   }
 
-  p { font-size: 18px; line-height: 1.3; }
+  p { line-height: 1.3; }
 }
 
 ul.nav .sep {
@@ -146,7 +151,7 @@ ul.nav .sep {
 /* Better inline code styling */
 p code, ul code {
   border: 1px solid #e1e1e1;
-  padding: 3px 4px;
+  padding: 1px 4px;
   border-radius: 4px;
 
   /* Drops the font-size by 2px in code blocks, TODO: Use LESS maths */
@@ -160,10 +165,9 @@ ul.index-menu {
 }
 
 h3 {
-  /* Generous gap before start of post content */
-  .post & { padding-top: 35px }
+  .post & { padding-top: 25px }
 
-  &, code { font-size: 30px; }
+  &, code { font-size: 24px; }
   
   code {
     font-weight: normal;
@@ -176,10 +180,14 @@ blockquote code {
   font-style: normal;
 }
 
-/* Wider Columns */
-.wrapper { width: 960px; margin: 0 auto; }
+// max-width for fluidity
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
 header, footer { width: 230px; }
-section { width: 670px; }
+
+section { width: 100%; padding-left: 260px; box-sizing: border-box; }
 
 .page-subtitle { margin-bottom: 4px; font-size: 20px }
 .meta { font-size: 16px; }
@@ -214,7 +222,7 @@ ul.social {
     }
 }
 
-@media print, screen and (max-width: 1060px) {
+@media print, screen and (max-width: 966px) {
   .wrapper {
     width: auto;
     margin: 0;
@@ -307,6 +315,9 @@ ul.social {
     margin-bottom: 10px;
     line-height: 1.2em;
     color: #777;
+    position: relative;
+    top: -2px;
+    left: 1px;
   }
   .post-index-link {
     display: block;

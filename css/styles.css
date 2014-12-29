@@ -17,7 +17,7 @@ body {
   color: #555555;
   font-weight: 300;
   line-height: 1.5em;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   border-top: 3px solid #5cadd6;
 }
@@ -40,7 +40,7 @@ h1,
 h2 {
   font-size: 40px;
 }
-@media (min-width: 1060px) {
+@media (min-width: 967px) {
   h1.no-subheading {
     margin-bottom: 40px;
   }
@@ -76,6 +76,10 @@ blockquote {
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
+}
+blockquote {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 code,
 pre {
@@ -147,7 +151,6 @@ header h1 a {
   color: #333;
 }
 header p {
-  font-size: 18px;
   line-height: 1.3;
 }
 ul.nav .sep {
@@ -159,7 +162,7 @@ ul.nav .sep {
 p code,
 ul code {
   border: 1px solid #e1e1e1;
-  padding: 3px 4px;
+  padding: 1px 4px;
   border-radius: 4px;
   /* Drops the font-size by 2px in code blocks, TODO: Use LESS maths */
   font-size: 14px;
@@ -169,15 +172,12 @@ ul.index-menu {
   padding: 0;
   list-style: none;
 }
-h3 {
-  /* Generous gap before start of post content */
-}
 .post h3 {
-  padding-top: 35px;
+  padding-top: 25px;
 }
 h3,
 h3 code {
-  font-size: 30px;
+  font-size: 24px;
 }
 h3 code {
   font-weight: normal;
@@ -187,9 +187,8 @@ h3 code {
 blockquote code {
   font-style: normal;
 }
-/* Wider Columns */
 .wrapper {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 header,
@@ -197,7 +196,9 @@ footer {
   width: 230px;
 }
 section {
-  width: 670px;
+  width: 100%;
+  padding-left: 260px;
+  box-sizing: border-box;
 }
 .page-subtitle {
   margin-bottom: 4px;
@@ -231,7 +232,7 @@ ul.social a:hover {
     left: -1px;
   }
 }
-@media print, screen and (max-width: 1060px) {
+@media print, screen and (max-width: 966px) {
   .wrapper {
     width: auto;
     margin: 0;
@@ -331,6 +332,9 @@ ul.social a:hover {
   margin-bottom: 10px;
   line-height: 1.2em;
   color: #777;
+  position: relative;
+  top: -2px;
+  left: 1px;
 }
 .index-menu .post-index-link {
   display: block;
