@@ -14,10 +14,8 @@ Things to be aware of, feel free to disable:
 
 ## Rebuilding Styles
 
+> Yes, sadly I built this theme back before Jekyll had built-in Sass support.
+
 The `.less` source file is in `css/_less`. Build using [LESS](http://lesscss.org) like so:
 
     lessc css/_less/styles.less css/styles.css
-
-## Todo
-
- * Build script - don't like the unminifed CSS and separate JS files
