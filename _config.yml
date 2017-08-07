@@ -5,6 +5,7 @@ twitter: http://twitter.com/nickwuh
 github: https://github.com/nilliams
 markdown: redcarpet
 pygments: false
-permalink: /:title
+permalink: /:title/
 sass:
   sass_dir: _sass
+  style: compressed
