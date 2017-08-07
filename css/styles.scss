@@ -30,8 +30,6 @@ body {
   margin: 0;
   border-top: 3px solid #5cadd6;
 }
-
-// max-width for fluidity
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
@@ -67,23 +65,6 @@ section {
 @media print, screen and (max-width: 480px) {
   body {
     padding: 15px;
-  }
-
-  /* Smaller headings when mobile */
-  h1, h2 {
-    font-size: 34px;
-  }
-  header h1 {
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  .post-title {
-    font-size: 22px;
-  }
-
-  /* Center headings when mobile */
-  .page-title, .page-subtitle, .meta {
-    text-align: center;
   }
 }
 
