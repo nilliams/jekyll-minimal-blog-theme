@@ -1,27 +1,32 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+$body-color: #555;
+$heading-color: #333;
+$link-color: #39c;
+$link-hover-color: #069;
+
+$body-font-size: 16px;
+$code-font-size: 14px;
+$small-font-size: 14px;
+
+$header-width-desktop: 230px;
+
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-@import 'header.less';
-@import 'archive.less';
-@import 'type.less';
-@import 'scroll.less';
-
-@body-color: #555;
-@heading-color: #333;
-@link-color: #39c;
-@link-hover-color: #069;
-
-@body-font-size: 16px;
-@code-font-size: 14px;
-@small-font-size: 14px;
-
-@header-width-desktop: 230px;
+@import 'header';
+@import 'archive';
+@import 'type';
+@import 'scroll';
 
 body {
   padding: 50px;
   font-family: Georgia, serif;
-  color: @body-color;
+  color: $body-color;
   font-weight: 300;
   line-height: 1.5em;
-  font-size: @body-font-size;
+  font-size: $body-font-size;
   margin: 0;
   border-top: 3px solid #5cadd6;
 }
@@ -32,7 +37,7 @@ body {
   margin: 0 auto;
 }
 footer {
-  width: @header-width-desktop;
+  width: $header-width-desktop;
 }
 section {
   width: 100%;

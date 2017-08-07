@@ -1,7 +1,7 @@
 header {
   float: left;
   position: fixed;
-  width: @header-width-desktop;
+  width: $header-width-desktop;
 
   ul {
     padding: 0;

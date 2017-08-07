@@ -11,11 +11,3 @@ Things to be aware of, feel free to disable:
  * [FitVids.js](http://fitvidsjs.com), and consequently Zepto.js are included so embedded videos will fit within a post. Appreciate this may be unwanted bloat. To remove, see bottom of `_layouts/default.html`.
  * Tags listed in the frontmatter of a post are listed on the archive/index page.
  * Be sure to check everything in `_config.yml`.
-
-## Rebuilding Styles
-
-> Yes, sadly I built this theme back before Jekyll had built-in Sass support.
-
-The `.less` source file is in `css/_less`. Build using [LESS](http://lesscss.org) like so:
-
-    lessc css/_less/styles.less css/styles.css
