@@ -3,6 +3,11 @@
 # only Main files contain this front matter, not partials.
 ---
 
+$font-primary: Georgia, serif;
+$font-secondary: "Helvetica Neue", sans-serif;
+$font-accent: Lato, "Helvetica Neue", sans-serif;
+$font-monospace: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+
 $body-color: #555;
 $heading-color: #333;
 $link-color: #39c;
@@ -18,71 +23,6 @@ $header-width-desktop: 230px;
 @import 'header';
 @import 'archive';
 @import 'type';
+@import 'structure';
 @import 'scroll';
-
-body {
-  padding: 50px;
-  font-family: Georgia, serif;
-  color: $body-color;
-  font-weight: 300;
-  line-height: 1.5em;
-  font-size: $body-font-size;
-  margin: 0;
-  border-top: 3px solid #5cadd6;
-}
-.wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-}
-footer {
-  width: $header-width-desktop;
-}
-section {
-  width: 100%;
-  padding-left: 260px;
-  box-sizing: border-box;
-}
-
-@media print, screen and (max-width: 966px) {
-  .wrapper {
-    width: auto;
-    margin: 0;
-  }
-
-  header, section, footer {
-    float: none;
-    position: static;
-    width: auto;
-  }
-
-  section {
-    border-top: 1px solid #e5e5e5;
-    padding: 20px 0;
-    margin: 0 0 20px;
-  }
-}
-
-@media print, screen and (max-width: 480px) {
-  body {
-    padding: 15px;
-  }
-}
-
-@media print {
-  body {
-    padding: 0.4in;
-    font-size: 12pt;
-  }
-}
-
-/* Micro clearfix */
-.cf:before, .cf:after {
-  content: " ";
-  display: table;
-}
-.cf:after {
-  clear: both;
-}
-.cf {
-  *zoom: 1;
-}
+@import 'util';

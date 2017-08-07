@@ -1,7 +1,11 @@
+body {
+  font-family: $font-primary;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: $heading-color;
   margin: 0 0 20px;
-  font-family: Lato, "Helvetica Neue", sans-serif;
+  font-family: $font-accent;
 }
 
 h1, h2, h3 {
@@ -25,7 +29,7 @@ h1, h2 {
   font-size: $body-font-size;
 }
 
-/* Smaller headings when mobile */
+// Smaller headings when mobile
 @media print, screen and (max-width: 480px) {
   h1, h2 {
     font-size: 34px;
@@ -38,7 +42,7 @@ h1, h2 {
     font-size: 22px;
   }
 
-  /* Center headings when mobile */
+  // Center headings when mobile
   .page-title, .page-subtitle, .meta {
     text-align: center;
   }
@@ -81,7 +85,7 @@ blockquote {
 }
 
 code, pre {
-  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  font-family: $font-monospace;
   color: #333;
   font-size: $code-font-size;
 }
@@ -144,7 +148,7 @@ ul.nav .sep {
   font-style: normal;
 }
 
-/* Better inline code styling */
+// Better inline code styling
 p code, ul code {
   border: 1px solid #e1e1e1;
   padding: 1px 4px;

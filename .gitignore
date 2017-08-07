@@ -1,2 +1,4 @@
+_posts
 _site
+node_modules
 .*.swp
