@@ -12,9 +12,14 @@ header {
     float: left;
   }
 
-  h1 {
+  .site-name {
     font-size: 30px;
     white-space: nowrap;
+
+    @media (max-width: 480px) {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
 
     a {
       font-weight: bold;
