@@ -1,11 +1,9 @@
 body {
-  padding: 50px;
-  color: $body-color;
-  font-weight: 300;
-  line-height: 1.5em;
-  font-size: $body-font-size;
   margin: 0;
   border-top: 3px solid #5cadd6;
+
+  padding: 15px;
+  @media (min-width: 481px) { padding: 50px; }
 }
 .wrapper {
   max-width: 960px;
@@ -36,12 +34,6 @@ section {
     border-top: 1px solid #e5e5e5;
     padding: 20px 0;
     margin: 0 0 20px;
-  }
-}
-
-@media print, screen and (max-width: 480px) {
-  body {
-    padding: 15px;
   }
 }
 

@@ -1,5 +1,9 @@
 body {
+  color: $body-color;
   font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: $body-font-size;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -7,7 +11,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
   font-family: $font-accent;
 }
-
 h1, h2, h3 {
   line-height: 1.1;
 }
@@ -15,15 +18,10 @@ h1, h2 {
   font-size: 30px;
 }
 
-@media (min-width: 967px) {
-  h1.no-subheading {
-    margin-bottom: 40px;
-  }
-}
-
 .page-subtitle {
   margin-bottom: 4px;
   font-size: 20px;
+  font-weight: 400;
 }
 .meta {
   font-size: $body-font-size;
@@ -52,10 +50,10 @@ a {
   color: $link-color;
   font-weight: 400;
   text-decoration: none;
-}
 
-a:hover {
-  color: $link-hover-color;
+  &:hover {
+    color: $link-hover-color;
+  }
 }
 
 a small {
@@ -73,11 +71,12 @@ blockquote {
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
-}
-
-blockquote {
   margin-top: 30px;
   margin-bottom: 30px;
+
+  @media (max-width: 480px) {
+    padding-left: 12px;
+  }
 }
 
 code, pre {
@@ -138,13 +137,6 @@ section {
   margin-top: 40px;
 }
 
-ul.nav .sep {
-  padding: 0 6px;
-  color: #ccc;
-  font-style: normal;
-}
-
-// Better inline code styling
 p code, ul code {
   border: 1px solid #e1e1e1;
   padding: 1px 4px;
@@ -161,7 +153,7 @@ h3 {
     padding-top: 25px;
   }
 
-  &, code {
+  &, & code {
     font-size: 24px;
   }
 

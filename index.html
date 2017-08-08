@@ -12,7 +12,7 @@ title: Archive - Nick Williams - Full-stack developer
     {% for post in site.posts %}
     <li>
       <a class="post-index-link" href="{{ post.url }}">
-        <span class="post-title">{{ post.title }}</span>
+        <h3 class="post-title">{{ post.title }} <i class="icon-external-link"></i></h3>
         <span class="post-subtitle">{{ post.subtitle }}</span>
       </a>
       <small>{{ post.date | date: "%-d %B, %Y" }}</small>

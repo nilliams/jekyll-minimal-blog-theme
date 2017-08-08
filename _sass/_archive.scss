@@ -9,15 +9,31 @@
     color: #999;
   }
   .post-title {
-    display: block;
-    font-size: 26px;
-    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 400;
     line-height: 1em;
+    color: $heading-color;
+    margin-bottom: 5px;
+
+    i {
+      font-size: 0.6em;
+      margin-left: 5px;
+      color: #aaa;
+    }
   }
+  a:hover .post-title {
+    &, i {
+      color: $link-color;
+    }
+  }
+
   .post-subtitle {
+    font-size: 15px;
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #777;
+
+    // pixel-nudge
     position: relative;
     left: 1px;
   }
@@ -32,7 +48,7 @@
   padding: 2px 6px;
   border: 2px solid #dddddd;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   position: relative;
   top: -1px;
   color: #666666;
