@@ -67,7 +67,7 @@ small, a small {
 }
 
 blockquote {
-  border-left: 2px solid #e5e5e5;
+  border-left: 2px solid $border-color-muted;
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
@@ -88,7 +88,7 @@ code, pre {
 pre {
   padding: 8px 15px;
   background: #f8f8f8;
-  border: 1px solid #e5e5e5;
+  border: 1px solid $border-color-muted;
   overflow-x: auto;
 }
 
@@ -100,15 +100,15 @@ table {
 th, td {
   text-align: left;
   padding: 5px 10px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $border-color-muted;
 }
 
 th {
-  color: #444;
+  color: $body-color;
 }
 
 dt {
-  color: #444;
+  color: $body-color;
   font-weight: 700;
 }
 
@@ -117,13 +117,13 @@ img {
 }
 
 strong {
-  color: #444;
+  color: $body-color;
   font-weight: 700;
 }
 
 hr {
   border: 0;
-  background: #e5e5e5;
+  background: $border-color-muted;
   height: 1px;
   margin: 0 0 20px;
 }
@@ -133,12 +133,8 @@ section {
   padding-bottom: 50px;
 }
 
-.post {
-  margin-top: 40px;
-}
-
 p code, ul code {
-  border: 1px solid #e1e1e1;
+  border: 1px solid $border-color-muted;
   padding: 1px 4px;
   border-radius: 4px;
 }
