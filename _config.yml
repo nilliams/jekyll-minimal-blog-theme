@@ -3,8 +3,7 @@ tagline: Full-stack developer with a passion for JavaScript.
 location: Leicestershire, UK
 twitter: http://twitter.com/nickwuh
 github: https://github.com/nilliams
-markdown: redcarpet
-pygments: false
+highlighter: null
 permalink: /:title/
 sass:
   sass_dir: _sass
